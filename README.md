@@ -1,2 +1,2 @@
 # Quiz_app
-1:You should instal nodejs
+1:You should install nodejs
