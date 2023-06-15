@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Quiz Game</title>
+</head>
+<body class="bg-blue-700 flex flex-col items-center justify-center font-serif own">
+        <button class="px-4 py-3 bg-white shadow-black rounded-sm text-blue-700 w-[200px] text-3xl mt-[100px]" id="start">Start</button>
+        <div class="buttons hidden">
+            <button class="px-4 py-3 bg-white shadow-sm rounded-sm text-blue-700 w-[200px] text-3xl mt-[100px]">Easy</button>
+            <a href="Mid.html" class="px-5 py-3 bg-white shadow-sm rounded-sm text-blue-700 w-[250px] text-3xl mt-[100px]">Medium</a>
+            <a href="Dif.html" class="px-5 py-3 bg-white shadow-sm rounded-sm text-blue-700 w-[250px] text-3xl mt-[100px]">Difficult</a>
+        </div>
+        <img id="spinner" src="img/spinner.gif" alt="" class="hidden">
+        <!-- ------------------------------------------------------------------ -->
+    <div id="quizEsay" class="bg-white p-4 hidden flex-col items-start w-[30%] mt-40 rounded-md ">
+        <div class="flex flex-row items-center justify-between w-full border-b border-solid pb-3">
+            <p class="font-semibold text-xl text-gray-600">Quiz</p>
+            <p class="flex flex-row items-center bg-blue-300 rounded-md p-1 text-blue-900 font-semibold">Time<span class="mx-1" id="timeoff">Left</span><span class="bg-gray-700 w-[30px] text-center rounded-md text-white" id="time"></span></p>
+        </div>
+        <div class="flex flex-col items-start justify-start gap-y-3 pb-5 border-b-2 border-solid w-full">
+            <h3 id="qH_esay" class="font-bold text-gray-600">Whre is the capetal of Afghanistan?</h3>
+            <div class="opstions w-full gap-2 flex flex-col items-start ">
+            </div>
+        </div>
+        <div class="flex flex-row items-end justify-end w-full mt-5">
+            <button id="next" class="bg-blue-500 hidden p-1 px-3 text-white font-bold rounded-md float-right">Next</button>
+        </div>
+    </div>
+    <!-- ------------------------------------------------------------------- -->
+    
+
+    <!-- ---------------------------------------------------- -->
+    <div class="finish hidden bg-white p-5 mt-[50px] flex-col items-center gap-4 justify-center rounded-md">
+        <h1 class="text-2xl text-bold ">Quiz is Compelet</h1>
+        <a href="Mid.html" class="px-5 py-3 bg-blue-700 text-white rounded-md">Go Another</a>
+    </div>
+    <script src="js/qu.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+<!-- npx tailwindcss -i ./src/input.css -o ./build/css/style.css --watch -->
+<!-- the code of the start the project -->
